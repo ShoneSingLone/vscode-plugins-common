@@ -18,10 +18,10 @@
 ```js
 "commands": [
     {
-				"command": "shone.sing.lone.toPinYin",
-				"title": "toPinYin"
-	},
-    {
+        "command": "shone.sing.lone.toPinYin",
+        "title": "toPinYin"
+},
+{
         "command": "shone.sing.lone.transpose",
         "title": "Transpose"
     },
