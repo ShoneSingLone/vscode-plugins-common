@@ -2,7 +2,7 @@
 	"name": "myvscodeplugins",
 	"displayName": "MyVSCodePlugins",
 	"description": "my private vscode plugins settings",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "ShoneSingLone",
 	"engines": {
 		"vscode": "^1.62.0"
