@@ -1,16 +1,18 @@
-"use strict";
 const vscode = require("vscode");
-const { transpose, splitIntoLines } = require("./Commands");
-const { toPinYin } = require("./Commands.toPinYin");
-// Activate
+
+const { getCommandsTranspose } = require('./shortKey/Commands/Commands.Transpose');
+const { getCommandsToPinYin } = require('./shortKey/Commands/Commands.toPinYin');
+const { getCommandsSplitIntoLines } = require('./shortKey/Commands/Commands.SplitIntoLines');
+const { getCommandsQuoteIt, getCommandsQuoteItArray } = require('./shortKey/Commands/Commands.QuoteIt');
+
+
+global.vscode = vscode;
 function activate(context) {
-    const commandsTranspose = vscode.commands.registerTextEditorCommand("shone.sing.lone.transpose", transpose);
-    context.subscriptions.push(commandsTranspose);
-
-    const commandsSplitIntoLines = vscode.commands.registerTextEditorCommand("shone.sing.lone.splitIntoLines", splitIntoLines);
-    context.subscriptions.push(commandsSplitIntoLines);
-
-    const commandsToPinYin = vscode.commands.registerTextEditorCommand("shone.sing.lone.toPinYin", toPinYin);
-    context.subscriptions.push(commandsToPinYin);
+  context.subscriptions.push(getCommandsTranspose());
+  context.subscriptions.push(getCommandsSplitIntoLines());
+  context.subscriptions.push(getCommandsQuoteIt());
+  context.subscriptions.push(getCommandsQuoteItArray());
+  context.subscriptions.push(getCommandsToPinYin());
 }
+
 exports.activate = activate;

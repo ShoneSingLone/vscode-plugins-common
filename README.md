@@ -17,31 +17,27 @@
 
 ```js
 "commands": [
-    {
-        "command": "shone.sing.lone.toPinYin",
-        "title": "toPinYin"
-},
-{
-        "command": "shone.sing.lone.transpose",
-        "title": "Transpose"
-    },
-    {
-        "command": "shone.sing.lone.splitIntoLines",
-        "title": "Split into Lines"
-    }
-]
-/* 
-vscode 已经 内置
-包括 Bracket Pairs => Editor>Guides:
-{
-    "command": "shone.sing.lone.expandToLine",
-    "title": "Expand Selection to Line"
-},
-{
-    "command": "shone.sing.lone.joinLines",
-    "title": "Join Lines"
-}
-*/
+			{
+				"command": "shone.sing.lone.transpose",
+				"title": "Transpose"
+			},
+			{
+				"command": "shone.sing.lone.splitIntoLines",
+				"title": "Split into Lines"
+			},
+			{
+				"command": "shone.sing.lone.toPinYin",
+				"title": "toPinYin"
+			},
+			{
+				"command": "shone.sing.lone.QuoteIt",
+				"title": "Quote It"
+			},
+			{
+				"command": "shone.sing.lone.QuoteIt.Array",
+				"title": "Quote It Array"
+			}
+		]
 ```
 
 - [vscode-change-case](https://github.com/wmaurer/vscode-change-case/blob/master/src/extension.ts)

@@ -10,3 +10,13 @@ function toPinYin(textEditor, edit) {
     }
 }
 exports.toPinYin = toPinYin;
+
+
+
+function getCommandsToPinYin() {
+    return vscode.commands.registerTextEditorCommand(
+        "shone.sing.lone.toPinYin",
+        toPinYin
+    );
+}
+exports.getCommandsToPinYin = getCommandsToPinYin;

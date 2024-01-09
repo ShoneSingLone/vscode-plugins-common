@@ -14,11 +14,7 @@
 		"url": "https://github.com/ShoneSingLone/vscode-plugins-common"
 	},
 	"activationEvents": [
-		"onCommand:shone.sing.lone.transpose",
-		"onCommand:shone.sing.lone.expandToLine",
-		"onCommand:shone.sing.lone.splitIntoLines",
-		"onCommand:shone.sing.lone.joinLines",
-		"onLanguage:vue"
+		"onStartupFinished"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -34,6 +30,14 @@
 			{
 				"command": "shone.sing.lone.toPinYin",
 				"title": "toPinYin"
+			},
+			{
+				"command": "shone.sing.lone.QuoteIt",
+				"title": "Quote It"
+			},
+			{
+				"command": "shone.sing.lone.QuoteIt.Array",
+				"title": "Quote It Array"
 			}
 		]
 	},
